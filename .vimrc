@@ -116,4 +116,4 @@ autocmd BufEnter * :syntax sync fromstart
 " without staying in insert mode
 " https://stackoverflow.com/questions/16134457/insert-a-newline-without-entering-in-insert-mode-vim
 nmap oo o<Esc>k
-nmap OO O<Esc>k
+nmap OO O<Esc>j
