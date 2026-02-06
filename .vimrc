@@ -111,3 +111,9 @@ nnoremap <C-L> <C-W>l
 " https://vim.fandom.com/wiki/Fix_syntax_highlighting
 " syntax sync minlines=1000
 autocmd BufEnter * :syntax sync fromstart
+
+" Insert a blank line below cursor, o, or above cursor, O,
+" without staying in insert mode
+" https://stackoverflow.com/questions/16134457/insert-a-newline-without-entering-in-insert-mode-vim
+nmap oo o<Esc>k
+nmap OO O<Esc>k
