@@ -117,3 +117,7 @@ autocmd BufEnter * :syntax sync fromstart
 " https://stackoverflow.com/questions/16134457/insert-a-newline-without-entering-in-insert-mode-vim
 nmap oo o<Esc>k
 nmap OO O<Esc>j
+
+" Comment a single line globally
+nnoremap _c I<!-- <Esc>A --><Esc>
+
