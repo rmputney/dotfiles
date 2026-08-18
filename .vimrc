@@ -14,6 +14,7 @@ set hidden
 set hlsearch
 set incsearch
 set ignorecase
+set nowrapscan
 " set autochdir
 set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
 " Key Options Explained
