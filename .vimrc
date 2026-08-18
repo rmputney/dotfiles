@@ -14,6 +14,17 @@ set hidden
 set hlsearch
 set incsearch
 " set autochdir
+set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
+" Key Options Explained
+" blank: Saves empty windows and keeps your window layout intact, even if a window has no file loaded.
+" buffers: Saves all files currently hidden in the background, not just the ones visible on your screen.
+" curdir: Remembers your current working directory so relative file paths still work when you restore.
+" folds: Manually created folds and your open/closed fold statuses are completely preserved.
+"tabpages: Saves all open tabs and their respective window layouts, rather than just the active tab.
+" winsize: Preserves the exact height and width of all your splits and windows.
+" What is Left Out? By omitting options like options and globals, you prevent Vim from saving local settings
+" (like line numbers or search highlights) into the session file. This ensures that your standard configuration
+" from your ~/.vimrc always takes precedence when you start a new session.
 
 :map Y y$
 
