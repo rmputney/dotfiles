@@ -13,6 +13,7 @@ set expandtab
 set hidden
 set hlsearch
 set incsearch
+set ignorecase
 " set autochdir
 set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
 " Key Options Explained
