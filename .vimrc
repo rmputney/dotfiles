@@ -134,3 +134,34 @@ nmap OO O<Esc>j
 " Comment a single line globally
 nnoremap _c I<!-- <Esc>A --><Esc>
 
+iabbrev <expr> spinR ""
+    \ . "#' ---\n"
+    \ . "#' title: \n"
+    \ . "#' author: \"Ryan Putney\"\n"
+    \ . "#' date: \"`r Sys.Date()`\"\n"
+    \ . "#' output:\n"
+    \ . "#'   html_document:\n"
+    \ . "#'     toc: true\n"
+    \ . "#'     toc_float: true\n"
+    \ . "#'     code_folding: hide\n"
+    \ . "#' theme: cosmo\n"
+    \ . "#' ---\n"
+
+imap <C-H> spinR<C-]>
+
+iabbrev <expr> headR "\<C-O>:set paste\<CR>"
+    \ . "---\n"
+    \ . "title: \n"
+    \ . "author: \"Ryan Putney\"\n"
+    \ . "date: \"`r Sys.Date()`\"\n"
+    \ . "output:\n"
+    \ . "  html_document:\n"
+    \ . "    toc: true\n"
+    \ . "    toc_float: true\n"
+    \ . "    code_folding: hide\n"
+    \ . "theme: cosmo\n"
+    \ . "---\n"
+    \ . "\<C-O>:set nopaste\<CR>"
+
+imap <C-Y> headR<C-]>
+
